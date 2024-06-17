@@ -21,7 +21,7 @@
                     <tr>
                         <th width="10">
 
-                        </th>
+                        </th>   
                         <th>
                             {{ trans('global.user.fields.name') }}
                         </th>

@@ -45,6 +45,18 @@
                     {{ trans('global.product.fields.price_helper') }}
                 </p>
             </div>
+            <div class="form-group {{ $errors->has('stock') ? 'has-error' : '' }}">
+                <label for="price">{{ trans('global.product.fields.stock') }}</label>
+                <input type="number" id="stock" name="stock" class="form-control" value="{{ old('stock', isset($product) ? $product->stock : '') }}" step="0.01">
+                @if($errors->has('stock'))
+                    <p class="help-block">
+                        {{ $errors->first('stock') }}
+                    </p>
+                @endif
+                <p class="helper-block">
+                    {{ trans('global.product.fields.stock_helper') }}
+                </p>
+            </div>
             <div>
                 <input class="btn btn-danger" type="submit" value="{{ trans('global.save') }}">
             </div>

@@ -13,9 +13,9 @@
                 <label for="name">{{ trans('global.user.fields.name') }}*</label>
                 <input type="text" id="name" name="name" class="form-control" value="{{ old('name', isset($user) ? $user->name : '') }}">
                 @if($errors->has('name'))
-                    <p class="help-block">
-                        {{ $errors->first('name') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('name') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('global.user.fields.name_helper') }}
@@ -25,9 +25,9 @@
                 <label for="email">{{ trans('global.user.fields.email') }}*</label>
                 <input type="email" id="email" name="email" class="form-control" value="{{ old('email', isset($user) ? $user->email : '') }}">
                 @if($errors->has('email'))
-                    <p class="help-block">
-                        {{ $errors->first('email') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('email') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('global.user.fields.email_helper') }}
@@ -37,9 +37,9 @@
                 <label for="password">{{ trans('global.user.fields.password') }}</label>
                 <input type="password" id="password" name="password" class="form-control">
                 @if($errors->has('password'))
-                    <p class="help-block">
-                        {{ $errors->first('password') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('password') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('global.user.fields.password_helper') }}
@@ -51,15 +51,15 @@
                     <span class="btn btn-info btn-xs deselect-all">Deselect all</span></label>
                 <select name="roles[]" id="roles" class="form-control select2" multiple="multiple">
                     @foreach($roles as $id => $roles)
-                        <option value="{{ $id }}" {{ (in_array($id, old('roles', [])) || isset($user) && $user->roles->contains($id)) ? 'selected' : '' }}>
-                            {{ $roles }}
-                        </option>
+                    <option value="{{ $id }}" {{ (in_array($id, old('roles', [])) || isset($user) && $user->roles->contains($id)) ? 'selected' : '' }}>
+                        {{ $roles }}
+                    </option>
                     @endforeach
                 </select>
                 @if($errors->has('roles'))
-                    <p class="help-block">
-                        {{ $errors->first('roles') }}
-                    </p>
+                <p class="help-block">
+                    {{ $errors->first('roles') }}
+                </p>
                 @endif
                 <p class="helper-block">
                     {{ trans('global.user.fields.roles_helper') }}

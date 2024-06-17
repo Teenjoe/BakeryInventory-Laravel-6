@@ -13,6 +13,7 @@ class Create1555355681975ProductsTable extends Migration
             $table->string('name');
             $table->longText('description')->nullable();
             $table->decimal('price', 15, 2)->nullable();
+            $table->integer('stock');
             $table->timestamps();
             $table->softDeletes();
         });

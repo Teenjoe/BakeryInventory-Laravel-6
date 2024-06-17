@@ -30,7 +30,15 @@
                         {{ trans('global.product.fields.price') }}
                     </th>
                     <td>
-                        ${{ $product->price }}
+                        Rp {{ $product->price }}
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        {{ trans('global.product.fields.stock') }}
+                    </th>
+                    <td>
+                        {{ $product->stock }} stock
                     </td>
                 </tr>
             </tbody>

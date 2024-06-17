@@ -32,6 +32,9 @@
                             {{ trans('global.product.fields.price') }}
                         </th>
                         <th>
+                            {{ trans('global.product.fields.stock') }}
+                        </th>
+                        <th>
                             &nbsp;
                         </th>
                     </tr>
@@ -50,6 +53,9 @@
                             </td>
                             <td>
                                 {{ $product->price ?? '' }}
+                            </td>
+                            <td>
+                                {{ $product->stock ?? '' }}
                             </td>
                             <td>
                                 @can('product_show')
