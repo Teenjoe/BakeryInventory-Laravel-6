@@ -1,47 +1,24 @@
-# Laravel+AdminLTE3: Adminpanel Boilerplate
+# Bakery Inventory - Laravel 6
 
-It is a demo project for demonstrating what can be generated with new 2019 version of [QuickAdminPanel](https://2019.quickadminpanel.com) tool. This boilerplate was fully __generated__, without adding any custom line of code.
+## Cara Menggunakan
 
-## What's inside
+- Clone repository dengan __git clone__
+- Salin file __.env.example__ ke __.env__ dan edit kredensial database di sana
+- Jalankan __composer install__
+- Jalankan __php artisan key:generate__
+- Jalankan __php artisan migrate --seed__ (sudah ada beberapa data yang di-seed untuk pengujian Anda)
+- Itu saja: buka URL utama atau pergi ke __/login__ dan masuk dengan kredensial default __admin@admin.com__ - __password__
 
-- Adminpanel with default one admin user (_admin@admin.com/password_) and two roles
-- Users/Roles/permissions management function (based on our own code similar to Spatie Roles-Permissions)
-- One demo CRUD for Products management - name/description/price
-- Everything that is needed for CRUDs: model+migration+controller+requests+views
+## Lisensi
 
-From that boilerplate you can manually create more CRUDs, assign permissions etc. Or use our [online generator](https://2019.quickadminpanel.com) for this.
-
-__Notice__: AdminLTE 3 version was not released officially. At the time of writing (April 2019), the latest was [v3.0.0-Alpha 2 release in May 2018](https://github.com/ColorlibHQ/AdminLTE/releases/tag/v3.0.0-alpha.2). But, at current alpha state, the theme is good enough to use for simple CRUDs like ours.
-
-## Screenshots
-
-![Laravel + AdminLTE3 screenshot 01](https://laraveldaily.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-16-at-11.25.35-AM.png)
-
-![Laravel + AdminLTE3 screenshot 02](https://laraveldaily.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-16-at-10.26.32-AM.png)
-
-![Laravel + AdminLTE3 screenshot 03](https://laraveldaily.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-16-at-10.26.16-AM.png)
-
-![Laravel + AdminLTE3 screenshot 04](https://laraveldaily.com/wp-content/uploads/2019/04/Screen-Shot-2019-04-16-at-10.27.20-AM.png)
-
-## How to use
-
-- Clone the repository with __git clone__
-- Copy __.env.example__ file to __.env__ and edit database credentials there
-- Run __composer install__
-- Run __php artisan key:generate__
-- Run __php artisan migrate --seed__ (it has some seeded data for your testing)
-- That's it: launch the main URL or go to __/login__ and login with default credentials __admin@admin.com__ - __password__
-
-## License
-
-Basically, feel free to use and re-use any way you want.
+Pada dasarnya, silakan gunakan dan gunakan kembali dengan cara apa pun yang Anda inginkan.
 
 ---
 
-## More from our LaravelDaily Team
-
-- Check out our adminpanel generator [QuickAdminPanel](https://quickadminpanel.com)
-- Read our [Blog with Laravel Tutorials](https://laraveldaily.com)
-- FREE E-book: [50 Laravel Quick Tips (and counting)](https://laraveldaily.com/free-e-book-40-laravel-quick-tips-and-counting/)
-- Subscribe to our [YouTube channel Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA)
-- Enroll in our [Laravel Online Courses](https://laraveldaily.teachable.com/)
+## Lebih Banyak dari Tim LaravelDaily Kami
+- Original template [Laravel-AdminLTE3-Boilerplate](https://github.com/LaravelDaily/Laravel-AdminLTE3-Boilerplate)
+- Lihat generator adminpanel kami [QuickAdminPanel](https://quickadminpanel.com)
+- Baca [Blog dengan Tutorial Laravel](https://laraveldaily.com) kami
+- E-book GRATIS: [50 Tips Cepat Laravel (dan terus bertambah)](https://laraveldaily.com/free-e-book-40-laravel-quick-tips-and-counting/)
+- Berlangganan [Saluran YouTube Laravel Business](https://www.youtube.com/channel/UCTuplgOBi6tJIlesIboymGA) kami
+- Daftar di [Kursus Online Laravel](https://laraveldaily.teachable.com/) kami
